@@ -326,8 +326,10 @@ a { color: inherit; text-decoration: none; }
 }
 .mock-hero {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 300px auto;
   align-items: center;
+  justify-content: center;
+  column-gap: 36px;
   min-height: 238px;
   padding: 0 38px;
   background: linear-gradient(90deg, #3680e5 0%, #5869ef 100%);
@@ -358,7 +360,7 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 20px 40px rgba(10, 35, 105, 0.18);
 }
 .mock-hero-copy {
-  padding: 24px 0 24px 10px;
+  padding: 24px 0;
 }
 .speech-bubble {
   position: relative;
