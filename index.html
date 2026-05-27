@@ -18,7 +18,7 @@
       <div class="plan-header__left">
         <p class="eyebrow">WEB PLANNING PROTOTYPE</p>
         <h1>AIDT 학급 데이터 다운로드 기능 기획안</h1>
-        <p class="subtitle">AI 분석 &gt; 학급 분석 화면 내 엑셀 다운로드 기능 추가</p>
+        <p class="subtitle">고객센터 &gt; 메뉴 리스트에 학급 데이터 다운로드(엑셀) 기능 추가</p>
         <div class="header-tags">
           <span>현재 진입한 반을 기본값으로</span>
           <span>담당 반 다중 선택 가능</span>
@@ -32,7 +32,7 @@
         </div>
         <div class="metric-chip">
           <small>적용 위치</small>
-          <strong>AI 분석 &gt; 학급 분석</strong>
+          <strong>고객센터</strong>
         </div>
       </div>
     </header>
@@ -54,7 +54,7 @@
           </article>
           <article class="summary-card soft-card">
             <strong>적용 위치</strong>
-            <p><b>AI 분석 &gt; 학급 분석</b>에 배치</p>
+            <p><b>고객센터</b>에 배치</p>
           </article>
           <article class="summary-card soft-card">
             <strong>핵심 방향</strong>
@@ -83,7 +83,6 @@
               <li>교사 ID 입력 후 조회 필요</li>
               <li>한 번에 여러 교사 ID 조회 가능</li>
               <li>조회된 교사 현황 확인 후 선택 다운로드</li>
-              <li>학급 데이터가 없으면 상태값으로 다운로드 불가 노출</li>
             </ul>
             <button class="image-card" data-image-src="./assets/asis-reference.png" data-image-title="AS-IS 참고 화면">
               <img src="./assets/asis-reference.png" alt="AS-IS 참고 화면 썸네일" />
@@ -94,7 +93,7 @@
           <article class="compare-card soft-card">
             <div class="compare-head">
               <span class="badge badge-blue">TO-BE</span>
-              <h3>AIDT 교사 화면</h3>
+              <h3>AIDT</h3>
             </div>
             <ul>
               <li>교사가 AIDT에서 직접 다운로드하는 기능</li>
@@ -120,129 +119,97 @@
           </div>
         </div>
 
-        <div class="mock-shell">
-          <div class="mock-gnb">
-            <div class="mock-gnb-left">
-              <button class="home-pill">홈</button>
-              <nav>
-                <a href="#">교과서</a>
-                <a href="#" class="active">AI 분석</a>
-                <a href="#">과제/평가</a>
-                <a href="#">자료실</a>
-              </nav>
-            </div>
-            <div class="mock-gnb-right">
-              <span class="icon-circle">💬</span>
-              <span class="icon-circle">🔔</span>
-              <span class="icon-circle">⚙️</span>
-              <button class="class-start-btn">수업 시작</button>
-              <span class="teacher-avatar">🧑‍🏫</span>
-            </div>
+        <div class="dashboard-shell">
+  <div class="dashboard-topbar">
+    <div class="dashboard-nav-left">
+      <button class="home-pill">홈</button>
+      <a href="#" class="dashboard-nav-item">교과서</a>
+      <a href="#" class="dashboard-nav-item active">AI 분석</a>
+      <a href="#" class="dashboard-nav-item">과제/평가</a>
+      <a href="#" class="dashboard-nav-item">자료실</a>
+    </div>
+
+    <div class="dashboard-nav-right">
+      <button class="top-icon-btn active">💬</button>
+      <button class="top-icon-btn">
+        🔔
+        <span class="badge-count">11</span>
+      </button>
+      <button class="top-icon-btn">⚙️</button>
+      <span class="nav-divider"></span>
+      <button class="class-start-btn">수업 시작</button>
+      <div class="teacher-avatar">🧑‍🏫</div>
+    </div>
+  </div>
+
+  <div class="dashboard-body">
+    <div class="dashboard-main">
+      <section class="dashboard-strip">
+        <div class="strip-title">
+          <strong>알림장</strong>
+          <span>6</span>
+        </div>
+        <button class="edit-icon-btn">✎</button>
+      </section>
+
+      <section class="recent-class-card">
+        <div class="recent-class-head">
+          <h3>가장 최근 수업</h3>
+          <button class="design-class-btn">수업 설계하기</button>
+        </div>
+
+        <div class="recent-class-body">
+          <div class="class-meta">
+            <span class="class-type-badge">수업</span>
+            <span class="class-date">2026-05-20 17:13:34</span>
           </div>
 
-          <div class="mock-hero">
-            <div class="mock-bot-wrap">
-              <div class="mock-bot-glow"></div>
-              <div class="mock-bot">🤖</div>
-            </div>
-            <div class="mock-hero-copy">
-              <div class="speech-bubble">안녕하세요? 저는 AI 보조교사 <b>삐리삐</b>예요! 🙂</div>
-              <p>학급 분석을 통해 수업 이해도, 학습 참여도 등</p>
-              <p>우리 반 학생들의 종합적인 학급 데이터를 확인할 수 있어요!</p>
-              <p>문제에 대한 오답, 풀이 시간 등 자세한 정보는 종합 리포트에서 확인해 보세요! 🔎</p>
-            </div>
+          <div class="class-title">
+            V . 평면도형과 입체도형 &gt; 1. 평면도형의 성질 &gt; ① 진단평가
           </div>
 
-          <div class="mock-content">
-            <div class="mock-title-row">
-              <div class="mock-title-left">
-                <button class="class-select">학급 전체 <span>▾</span></button>
-                <h3><span>의</span> 학급 분석</h3>
-              </div>
-              <div class="mock-title-actions">
-  <div class="click-guide-wrap">
-    <span class="click-ripple" aria-hidden="true"></span>
-    <button id="openModalBtn" class="download-entry-btn">
-      학급 데이터 다운로드
+          <div class="class-footer">
+            <span>👤 참여 인원 <b>1 / 5</b></span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="dashboard-side">
+      <div class="side-panel">
+        <div class="side-panel-title">학생 관리</div>
+        <div class="side-item">😊 오늘의 기분</div>
+        <div class="side-item">🎯 학생 목표 관리</div>
+        <div class="side-item">💗 학습심리정서검사 <span class="inline-badge">진행 중</span></div>
+        <div class="side-item">🏪 상점</div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="support-dropdown">
+    <div class="support-dropdown-title">고객센터</div>
+    <div class="support-divider"></div>
+
+    <button class="support-menu-item">공지사항</button>
+    <button class="support-menu-item">자주 하는 질문</button>
+    <button class="support-menu-item">
+      1:1 문의
+      <span class="menu-new-badge">New</span>
+    </button>
+    <button class="support-menu-item">이용안내</button>
+
+    <!-- 여기 메뉴를 클릭하면 기존 팝업이 열리도록 id 유지 -->
+    <button id="openModalBtn" class="support-menu-item support-menu-download">
+  <span class="support-download-text">학급 데이터 다운로드</span>
+  <span class="click-badge">클릭해보세요</span>
+</button>
+
+    <button class="support-guide-btn">
+      첫걸음 가이드
+      <span>⇩</span>
     </button>
   </div>
 </div>
-            </div>
-
-            <div class="summary-panel">
-              <div class="panel-toolbar">
-                <div class="toolbar-title">
-                  <span class="toolbar-icon">☰</span>
-                  <strong>학습 요약</strong>
-                </div>
-                <div class="toolbar-actions">
-                  <label class="filter-chip checked"><input type="checkbox" checked /> 수업</label>
-                  <label class="filter-chip checked"><input type="checkbox" checked /> 과제</label>
-                  <label class="filter-chip checked"><input type="checkbox" checked /> 평가</label>
-                  <label class="filter-chip checked"><input type="checkbox" checked /> 스스로 학습</label>
-                  <span class="divider"></span>
-                  <span class="period-label">학습 기간</span>
-                  <button class="period-field">2026.05 <span>📅</span></button>
-                  <button class="search-btn">조회</button>
-                </div>
-              </div>
-
-              <div class="summary-body">
-                <div class="summary-col">
-                  <h4>평균 학습 시간</h4>
-                  <div class="icon-stat">
-                    <div class="calendar-icon">📅</div>
-                    <strong>01:57</strong>
-                    <span>전월 대비 소폭 증가</span>
-                  </div>
-                </div>
-
-                <div class="summary-col bordered">
-                  <h4>학습 참여도</h4>
-                  <div class="gauge-card">
-  <div class="aidt-gauge">
-    <svg viewBox="0 0 180 96" class="gauge-svg" aria-hidden="true">
-      <path class="gauge-bg" d="M18 88 A72 72 0 0 1 162 88" />
-      <path class="gauge-progress" d="M18 88 A72 72 0 0 1 162 88" pathLength="100" stroke-dasharray="17 100" />
-    </svg>
-    <div class="gauge-face">😔</div>
-  </div>
-  <strong>17%</strong>
-  <span>최근 참여율</span>
-</div>
-                </div>
-
-                <div class="summary-col bordered">
-                  <h4>평균 정답률</h4>
-                  <div class="gauge-card">
-  <div class="aidt-gauge">
-    <svg viewBox="0 0 180 96" class="gauge-svg" aria-hidden="true">
-      <path class="gauge-bg" d="M18 88 A72 72 0 0 1 162 88" />
-      <path class="gauge-progress" d="M18 88 A72 72 0 0 1 162 88" pathLength="100" stroke-dasharray="23 100" />
-    </svg>
-    <div class="gauge-face">😔</div>
-  </div>
-  <strong>23%</strong>
-  <span>최근 정답률</span>
-</div>
-                </div>
-
-                <div class="summary-col bordered">
-                  <h4>강점 요약</h4>
-                  <div class="insight-box strength">
-                    <p>✓ 정비례 관계 y = ax(a ≠ 0)의 그래프 활용</p>
-                  </div>
-                  <h4 class="sub-insight-title">약점 요약</h4>
-                  <div class="insight-box weakness">
-                    <p>✓ 그래프의 해석</p>
-                    <p>✓ y = a/x(a ≠ 0)의 그래프 활용</p>
-                    <p>✓ 정비례 관계 y = ax(a ≠ 0)의 그래프</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section class="section glass-card">
